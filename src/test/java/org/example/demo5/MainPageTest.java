@@ -36,7 +36,7 @@ public class MainPageTest {
 
     @Test
     public void search() {
-        String input = "QA";
+        String input = "AQA";
         WebElement searchField = driver.findElement(By.cssSelector("#sb_form_q"));
         searchField.sendKeys(input);
         searchField.submit();
