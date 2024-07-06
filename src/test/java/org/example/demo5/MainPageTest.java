@@ -53,9 +53,9 @@ public class MainPageTest {
         //for (WebElement el : fff){
          //System.out.println(el.getText());
         //}
-      fff.get(0).click();
+     // fff.get(0).click();
        // List results = driver.findElements(By.cssSelector("h2 > a[href]"));
-    // clickElement(fff, 0);
+     clickElement(fff, 0);
         ArrayList tabs = new ArrayList<> (driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1).toString());
         String url = driver.getCurrentUrl();
@@ -63,7 +63,8 @@ public class MainPageTest {
         //WebElement searchPageField = driver.findElement(By.cssSelector("#sb_form_q"));
         //assertEquals(input, searchPageField.getAttribute("value"));
     }
-  // public void clickElement(List<WebElement> fff, int nomer){
-  //  }
+   public void clickElement(List<WebElement> fff, int nomer){
+        fff.get(nomer).click();
+   }
 
 }
